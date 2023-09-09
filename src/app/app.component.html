@@ -9,14 +9,34 @@
 <h1>{{titulo}}</h1>
 <h2>{{ejercio1}}</h2>
 <div>
-  <label>Edad 1   </label><input type="number"[(ngModel)]="edad1"><br>
-  <label>Edad 2   </label><input type="number"[(ngModel)]="edad2"/><br>
-  <button (click)="calcular()">Calcular</button><br>
-  <button (click)="limpiar()">Limpiar</button><br>
-  <label>Suma   </label><input type="text"[(ngModel)]="suma" readonly><br>
-  <label>Prom   </label><input type="text"[(ngModel)]="promedio" readonly/><br>
-</div>
+  <table>
+    <tr>
+      <th>Edades<br><br></th>
+    </tr>
+    <tr>
+      <td>Valor 1</td>
+      <td><input type="number"[(ngModel)]="edad1"><br></td>
+    </tr>
+    <tr>
+      <td>Valor 2</td>
+      <td><input type="number"[(ngModel)]="edad2"/><br></td>
+    </tr>
+    <tr>
+      <td><button (click)="calcular()">Calcular</button><br></td>
+      <td><button (click)="limpiar()">Limpiar</button><br></td>
+    </tr>
+    <tr>
+      <tr>
+        <td>Suma</td>
+        <td><input type="text"[(ngModel)]="suma" readonly></td>
+      </tr>
+      <tr>
+        <td>Promedio</td>
+        <td><input type="text"[(ngModel)]="promedio" readonly/></td>
+      </tr>
+  </table>
 
+</div>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
