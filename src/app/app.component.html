@@ -6,8 +6,16 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
+<h1>{{titulo}}</h1>
+<h2>{{ejercio1}}</h2>
+<div>
+  <label>Edad 1   </label><input type="number"[(ngModel)]="edad1"><br>
+  <label>Edad 2   </label><input type="number"[(ngModel)]="edad2"/><br>
+  <button (click)="calcular()">Calcular</button><br>
+  <button (click)="limpiar()">Limpiar</button><br>
+  <label>Suma   </label><input type="text"[(ngModel)]="suma" readonly><br>
+  <label>Prom   </label><input type="text"[(ngModel)]="promedio" readonly/><br>
+</div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
